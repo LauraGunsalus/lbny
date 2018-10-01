@@ -14,6 +14,7 @@ s1 = pd.Series(identifier, name='read_pair')
 s2 = pd.Series(barcode, name='barcode_sequence')
 
 Index_df = pd.DataFrame(dict(read_pair=s1, barcode_sequence=s2)).set_index(['read_pair'])
+
 # remove # in line 19 to display dataframe
 
 #df = Index_df
