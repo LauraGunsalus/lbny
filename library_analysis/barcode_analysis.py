@@ -23,6 +23,6 @@ Index_df = pd.DataFrame(dict(read_pair=s1, barcode_sequence=s2)).set_index(['rea
 
 pd.concat(g for _, g in df.groupby("read_pair") if len(g) > 1)
 
-# to determine how many barcodes are repeated in the library (N = 4,111,171)
+# to determine how many barcodes are repeated in the library (N = 4111171)
 
 pd.concat(g for _, g in df.groupby("barcode_sequence") if len(g) > 1)
